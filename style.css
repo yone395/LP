@@ -1,0 +1,241 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+.header {
+    background: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+.header .product-name {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.header .main-nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.header .main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header .main-nav li {
+    display: inline;
+    padding: 0 15px;
+}
+
+.header .main-nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.header .main-nav a:hover {
+    color: #77aaff;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 50px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section .catchphrase {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero-section .product-image {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #77aaff;
+}
+
+/* Features Section */
+.features-section {
+    padding: 40px 0;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-item {
+    flex: 1;
+    min-width: 280px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature-item h3 {
+    color: #77aaff;
+    margin-bottom: 15px;
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 40px 0;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pricing-table th, .pricing-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.pricing-table th {
+    background-color: #77aaff;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.pricing-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.pricing-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.contact-button {
+    display: inline-block;
+    background: #77aaff;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #5588dd;
+}
+
+/* Footer Styles */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .product-name,
+    .header .main-nav {
+        float: none;
+        text-align: center;
+    }
+
+    .header .main-nav ul {
+        padding-top: 10px;
+    }
+
+    .header .main-nav li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        width: 90%;
+    }
+
+    .pricing-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
