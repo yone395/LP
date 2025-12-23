@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>製品名 - ランディングページ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="product-name">弊社の素晴らしい製品</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#features">特徴</a></li>
+                    <li><a href="#pricing">価格</a></li>
+                    <li><a href="#contact">問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="catchphrase">あなたのビジネスを次のレベルへ！</h2>
+                    <p class="hero-description">
+                        革新的な技術で、日々の業務を効率化し、生産性を劇的に向上させます。
+                    </p>
+                    <a href="#contact" class="call-to-action-button">今すぐ始める</a>
+                </div>
+                <div class="hero-image">
+                    <img src="fig2.png" alt="製品画像">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2 class="section-title">製品の特徴</h2>
+                <div class="feature-list-image">
+                    <img src="fig1.jpg" alt="製品の特徴" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <h2 class="section-title">価格プラン</h2>
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>プラン</th>
+                            <th>月額料金</th>
+                            <th>特徴</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>基本プラン</td>
+                            <td>$19</td>
+                            <td>主要機能、限定サポート</td>
+                            <td><a href="#" class="button">選択</a></td>
+                        </tr>
+                        <tr>
+                            <td>プロプラン</td>
+                            <td>$49</td>
+                            <td>全機能、優先サポート、追加ストレージ</td>
+                            <td><a href="#" class="button">選択</a></td>
+                        </tr>
+                        <tr>
+                            <td>エンタープライズ</td>
+                            <td>要問い合わせ</td>
+                            <td>カスタム機能、専任担当、SLA</td>
+                            <td><a href="#contact" class="button">問い合わせ</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ</h2>
+                <p>ご質問やご相談がございましたら、お気軽にお問い合わせください。</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">お名前:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button">送信</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 弊社の素晴らしい製品. All rights reserved.</p>
+            <p>会社情報: 東京都, 日本</p>
+        </div>
+    </footer>
+</body>
+</html>
